@@ -12,11 +12,11 @@ If the flag isn't defined at launch, then DEFAULT (Round-Robin policy) is used.
 
 ## Polices
 
-* [DEFAULT](#default) - This is the default Round-Robin policy which comes with the vanilla version of xv6
-* [FCFS](#fcfs) - **F**irst **C**ome **F**irst **S**erved
-* [PRIORITY](#priority) - Priority algoritm based on priorities values
-* [SML](#sml) - **S**tatic **M**ulti­**L**evel queue scheduling
-* [LOTTERY](#lottery) - Lottery algorithm based on tickets and probability
+* [DEFAULT](#DEFAULT - Round Robin) - This is the default Round-Robin policy which comes with the vanilla version of xv6
+* [FCFS](#FCFS - First Come First Served) - **F**irst **C**ome **F**irst **S**erved
+* [PRIORITY](#PRIORITY - Priority scheduling algoritm) - Priority algoritm based on priorities values
+* [SML](#SML - Static multilevel queue scheduling) - **S**tatic **M**ulti­**L**evel queue scheduling
+* [LOTTERY](#LOTTERY - Lottery probabilistic scheduling algorithm) - Lottery algorithm based on tickets and probability
 
 ## DEFAULT - Round Robin
 
@@ -90,7 +90,7 @@ To enable it and see how SML works use this command when compiling xv6:
 
 $ make qemu SCHEDFLAG=SML
 
-### LOTTERY - Lottery probabilistic scheduling algorithm
+## LOTTERY - Lottery probabilistic scheduling algorithm
 
 The lottery is a probabilistic scheduling algorithm where at each process are each assigned some number of lottery tickets and the scheduler draws a random ticket to select the next process to run. 
 The distribution of tickets need not be uniform; granting a process more tickets provides it a relative higher chance of selection. This technique can be used to approximate other scheduling algorithms, such as Shortest job next and Fair-share scheduling.
