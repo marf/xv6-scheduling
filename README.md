@@ -12,11 +12,11 @@ If the flag isn't defined at launch, then DEFAULT (Round-Robin policy) is used.
 
 ## Polices
 
-* [DEFAULT](#DEFAULT - Round Robin) - This is the default Round-Robin policy which comes with the vanilla version of xv6
-* [FCFS](#FCFS - First Come First Served) - **F**irst **C**ome **F**irst **S**erved
-* [PRIORITY](#PRIORITY - Priority scheduling algoritm) - Priority algoritm based on priorities values
-* [SML](#SML - Static multilevel queue scheduling) - **S**tatic **M**ulti­**L**evel queue scheduling
-* [LOTTERY](#LOTTERY - Lottery probabilistic scheduling algorithm) - Lottery algorithm based on tickets and probability
+* [DEFAULT](#default---round-robin) - This is the default Round-Robin policy which comes with the vanilla version of xv6
+* [FCFS](#fcfs---first-come-first-served) - **F**irst **C**ome **F**irst **S**erved
+* [PRIORITY](#priority---priority-scheduling-algoritm) - Priority algoritm based on priorities values
+* [SML](#sml---static-multilevel-queue-scheduling) - **S**tatic **M**ulti­**L**evel queue scheduling
+* [LOTTERY](#lottery---lottery-probabilistic-scheduling-algorithm) - Lottery algorithm based on tickets and probability
 
 ## DEFAULT - Round Robin
 
