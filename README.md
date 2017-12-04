@@ -2,10 +2,16 @@
 
 This patch of xv6 aims to present 5 different scheduling policies which can be used in xv6.
 The 5 policies implemented: DEFAULT, FCFS, SML, DML and LOTTERY. 
-In order to enable a specific policy, when you launch qemu you have to specify the command above, which will set a flag that wil enable the scheduling policity specified in it.
+In order to enable a specific policy, when you launch qemu you have to specify the command above, which will set a flag that will enable the scheduling policity specified in it.
 
 ```
 $ make qemu SCHEDFLAG=FCFS
+```
+
+Alternatively if you want to patch your existing system you can launch the following command:
+
+```
+$ ./generate.sh --lab lab_scheduling --flags FCFS
 ```
 
 If the flag isn't defined at launch, then DEFAULT (Round-Robin policy) is used.
@@ -30,7 +36,13 @@ Round-robin scheduling is simple, easy to implement, and starvation-free.
 
 To enable it and see how DEFAULT works use this command when compiling xv6:
 
+```
 $ make qemu SCHEDFLAG=DEFAULT
+```
+
+```
+$ ./generate.sh --lab lab_scheduling --flags DEFAULT
+```
 
 ## FCFS - First Come First Served
 
@@ -45,7 +57,13 @@ In an environment where some processes might not complete, there can be starvati
 
 To enable it and see how FCFS works use this command when compiling xv6:
 
+```
 $ make qemu SCHEDFLAG=FCFS
+```
+
+```
+$ ./generate.sh --lab lab_scheduling --flags FCFS
+```
 
 ## PRIORITY - Priority scheduling algoritm
 
@@ -65,7 +83,13 @@ In this case ```priority``` is a number between 1 and 20 which represents the ne
 
 To enable it and see how PRIORITY works use this command when compiling xv6:
 
+```
 $ make qemu SCHEDFLAG=PRIORITY
+```
+
+```
+$ ./generate.sh --lab lab_scheduling --flags PRIORITY
+```
 
 
 ## SML - Static multilevel queue scheduling
@@ -119,7 +143,13 @@ Additional information on Lottery algorithm can be found here: [lottery paper](h
 
 To enable it and see how LOTTERY works use this command when compiling xv6:
 
+```
 $ make qemu SCHEDFLAG=LOTTERY
+```
+
+```
+$ ./generate.sh --lab lab_scheduling --flags LOTTERY
+```
 
 
 
