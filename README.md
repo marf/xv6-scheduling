@@ -18,7 +18,7 @@ If the flag isn't defined at launch, then DEFAULT (Round-Robin policy) is used.
 * [SML](#sml) - **S**tatic **M**ulti­**L**evel queue scheduling
 * [LOTTERY](#lottery) - Lottery algorithm based on tickets and probability
 
-### DEFAULT - Round Robin
+## DEFAULT - Round Robin
 
 The default algorithm implemented in xv6 it's one of the simplest (with FCFS) and relies on the Round-Robin policy, basically it loops through all the process which are available to run (market with the ```RUNNABLE```) state and give access to
 CPU at each one of them one at a time.
@@ -32,7 +32,7 @@ To enable it and see how DEFAULT works use this command when compiling xv6:
 
 $ make qemu SCHEDFLAG=DEFAULT
 
-### FCFS - First Come First Served
+## FCFS - First Come First Served
 
 First come first served (FCFS), is the simplest scheduling algorithm. FCFS simply queues processes in the order that they arrive in the ready queue. 
 The scheduling overhead due to using this policy is minimal since context switches only occur upon process termination, and no reorganization of the process queue is required.
@@ -47,7 +47,7 @@ To enable it and see how FCFS works use this command when compiling xv6:
 
 $ make qemu SCHEDFLAG=FCFS
 
-### PRIORITY - Priority scheduling algoritm
+## PRIORITY - Priority scheduling algoritm
 
 The priority scheduling algorithm (SML) represents a preemptive policy that executes processes based on their priority.
 The scheduling policy first select the runnable process with the lowest value of priority and executes it, after that it finds the one with the seconds lowest value of priority and excutes it
@@ -68,7 +68,7 @@ To enable it and see how PRIORITY works use this command when compiling xv6:
 $ make qemu SCHEDFLAG=PRIORITY
 
 
-### SML - Static multilevel queue scheduling
+## SML - Static multilevel queue scheduling
 
 The static multilevel queue scheduling (SML) represents a preemptive policy that includes a three priority queues (priority can asusme three values: 1,2 and 3). 
 The initial process should be initiated at priority 2and the priority should be copied upon fork. 
