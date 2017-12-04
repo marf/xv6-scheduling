@@ -133,6 +133,7 @@ In this case ```tickets``` is a number between 1 and 100 which represents the ne
 Example:
 
 ![alt Lottery scheduling algorithm example](https://image.prntscr.com/image/aAn5ZSaWTbuTZIRISLnaFw.png)
+
 *Five clients compete in a list-based
 lottery with a total of 20 tickets. The fifteenth ticket is randomly
 selected, and the client list is searched for the winner. A running
