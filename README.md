@@ -1,7 +1,7 @@
 # Scheduling policies in xv6
 
 This patch of xv6 aims to present 5 different scheduling policies which can be used in xv6.
-The 5 policies implemented: DEFAULT, FCFS, SML, DML and LOTTERY. 
+The 5 policies implemented: DEFAULT, FCFS, PRIORITY, SML and LOTTERY. 
 In order to enable a specific policy, when you launch qemu you have to specify the command above, which will set a flag that will enable the scheduling policity specified in it.
 
 ```
