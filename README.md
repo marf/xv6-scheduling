@@ -112,7 +112,9 @@ In this case ```priority``` is a number between 1 and 20 which represents the ne
 
 To enable it and see how SML works use this command when compiling xv6:
 
+```
 $ make qemu SCHEDFLAG=SML
+```
 
 ## LOTTERY - Lottery probabilistic scheduling algorithm
 
