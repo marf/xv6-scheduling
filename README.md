@@ -167,7 +167,7 @@ Two other important functions which can be useful to play with are
 ## Authors
 
 * **Marco Fontana** - *Added fcfs, sml and lottery scheduling algorithms, edited nice, added wait2 and reorganization of all scheduling polices (whith descriptions and optimizations)* - [marf](https://github.com/marf)
-* **Nicola Bicocchi** - *Command ps, first version of nice and processes priorities* - [agr_unimore](https://bitbucket.org/agr_unimore/operatingsystemsmsc)
+* **Nicola Bicocchi** - *Command ps, first version of nice and processes priorities*
 
 
 ## License
