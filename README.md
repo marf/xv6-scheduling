@@ -95,7 +95,7 @@ $ ./generate.sh --lab lab_scheduling --flags PRIORITY
 ## SML - Static multilevel queue scheduling
 
 The static multilevel queue scheduling (SML) represents a preemptive policy that includes a three priority queues (priority can asusme three values: 1,2 and 3). 
-The initial process should be initiated at priority 2and the priority should be copied upon fork. 
+The initial process should be initiated at priority 2 and the priority should be copied upon fork. 
 In this scheduling policy the scheduler will select a process from a lower queue only if no process is ready to run at a higher queue.
 The algorithm first runs all the process with highest priority and then, when they finish, it will consider all the process with a lower priority.
 Moving between priority queues is only available via a system call.
@@ -108,7 +108,7 @@ The following system call will change the priority queue of the process with a s
 int chpr(int pid, int priority)
 ```
 
-In this case ```priority``` is a number between 1 and 20 which represents the new process priority.
+In this case ```priority``` is a number between 1 and 3 which represents the new process priority.
 
 To enable it and see how SML works use this command when compiling xv6:
 
