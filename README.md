@@ -26,7 +26,7 @@ If the flag isn't defined at launch, then DEFAULT (Round-Robin policy) is used.
 
 ## DEFAULT - Round Robin
 
-The default algorithm implemented in xv6 it's one of the simplest (with FCFS) and relies on the Round-Robin policy, basically it loops through all the process which are available to run (market with the ```RUNNABLE```) state and give access to
+The default algorithm implemented in xv6 it's one of the simplest (with FCFS) and relies on the Round-Robin policy, basically it loops through all the process which are available to run (marked with the ```RUNNABLE```) state and give access to
 CPU at each one of them one at a time.
 To schedule processes fairly, a round-robin scheduler generally employs time-sharing, giving each job a time slot or quantum (its allowance of CPU time), and interrupting the job if it is not completed by then. 
 The job is resumed next time a time slot is assigned to that process. 
